@@ -6,6 +6,6 @@ diff = number2 - number1
 
 multiply = number1 * number2
 
-print("Addition of "+ number1 + " and "+ number2 + " is " + sum)
-print("Subtraction of "+ number1 + " and "+ number2 + " is " + diff)
-print("Multiplication of "+ number1 + " and "+ number2 + " is " + multiply)
+print(f"Addition of {number1} and {number2} is {sum1}")
+print(f"Subtraction of {number1} and {number2} is {diff}")
+print(f"Multiplication of {number1} and {number2} is {multiply}")
