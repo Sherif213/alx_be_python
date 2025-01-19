@@ -7,9 +7,10 @@ class Book:
         self._is_checked_out = False
     
 class Library:
-    _books = []
+    
     def __init__(self):
-        pass
+        self._books = []
+        
     def add_book(self,book):
         if(book in self._books):
             print("The book already exists.")
