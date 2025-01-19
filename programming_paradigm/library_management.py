@@ -8,6 +8,8 @@ class Book:
     
 class Library:
     _books = []
+    def __init__(self):
+        pass
     def add_book(self,book):
         if(book in self._books):
             print("The book already exists.")
