@@ -16,9 +16,17 @@ class Library:
         else:
             self._books.append(book)
     def check_out_book(self,title):
-        pass
+        for book in self._books:
+            if book.title == title:
+                book._is_checked_out = True
     def return_book(self,title):
-        pass
+        for book in self._books:
+            if book.title == title:
+                book._is_checked_out = False
     def list_available_books(self):
         if(self._books !=''): 
-            print(self._books)
+            for book in self._books:
+                if book._is_checked_out == False:
+                    print(f"{book.title} by {book.author}")
+            
+    
